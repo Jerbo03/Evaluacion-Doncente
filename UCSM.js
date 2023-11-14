@@ -2,7 +2,7 @@
 // Min es el valor mínimo para evaluar el docente (1-5)
 // nPr es el array de preguntas por sección en la encuesta
 // Auto habilita o deshabilita el pase al siguiente docente de forma automática
-function evaluarUCSM(max, min, nPr, auto) {
+function evaluarUCSM(max, min, nPr) {
   	if (max>5 || min>5 || max<1 || max<1) throw("Max o min fuera de rango");
 	
 	min--;
@@ -15,7 +15,7 @@ function evaluarUCSM(max, min, nPr, auto) {
 	}
 	}
 
-	if (auto) document.getElementById('MainContent_btnGuardar').click();
+	document.getElementById('MainContent_btnGuardar').click(); // Pasar automáticamente al siguiente
 }
 
 // E.g. evaluarUCSM(5,4,[3,4,4,4,4,1]);
