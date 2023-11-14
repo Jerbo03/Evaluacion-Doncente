@@ -1,7 +1,6 @@
 // Max es el valor máximo para evaluar el docente (1-5)
 // Min es el valor mínimo para evaluar el docente (1-5)
 // nPr es el array de preguntas por sección en la encuesta
-// Auto habilita o deshabilita el pase al siguiente docente de forma automática
 function evaluarUCSM(max, min, nPr) {
   	if (max>5 || min>5 || max<1 || max<1) throw("Max o min fuera de rango");
 	
