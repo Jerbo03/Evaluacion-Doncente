@@ -1,7 +1,7 @@
 // Max es el valor máximo para evaluar el docente (1-5)
 // Min es el valor mínimo para evaluar el docente (1-5)
 // nPr es el array de preguntas por sección en la encuesta
-function evaluarUCSM(max, min, nPr) {
+function evaluarUCSM(max, min, nPr = [3,5,2,1,1,1,1,1]) {
   	if (max>5 || min>5 || max<1 || max<1) throw("Max o min fuera de rango");
 	
 	min--;
@@ -17,4 +17,4 @@ function evaluarUCSM(max, min, nPr) {
 	document.getElementById('MainContent_btnGuardar').click(); // Pasar automáticamente al siguiente
 }
 
-// E.g. evaluarUCSM(5,4,[3,5,2,1,1,1,1,1]);
+// E.g. evaluarUCSM(5,4);
