@@ -17,4 +17,4 @@ function evaluarUCSM(max, min, nPr) {
 	document.getElementById('MainContent_btnGuardar').click(); // Pasar automáticamente al siguiente
 }
 
-// E.g. evaluarUCSM(5,4,[3,4,2,1,1,1,1,1]);
+// E.g. evaluarUCSM(5,4,[3,5,2,1,1,1,1,1]);
