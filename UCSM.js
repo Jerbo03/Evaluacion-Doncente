@@ -7,7 +7,9 @@ function evaluarUCSM(max, min) {
 
     while (true) {
         let r = Math.floor(Math.random() * (max - min) + min);
-        let id = `MainContent_GridViewPreguntasGral_GridViewPreguntas_${i}_RadioButtonListOpciones_${j}_${r}_${j}`;
+
+        // El id de las preguntas suele cambiar cada año, pero la lógica es la misma
+        let id = `MainContent_rpt_areas_rpt_preguntas_${i}_rblOpciones_${j}_${r}_${j}`;
         let rad = document.getElementById(id);
 
         if (rad) {
